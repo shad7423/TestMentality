@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A19FA4B207B6CFD00DD76A0 /* belowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A19FA4A207B6CFD00DD76A0 /* belowCollectionViewCell.swift */; };
 		6A7AB0112079DAFB002EFC80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7AB0102079DAFB002EFC80 /* AppDelegate.swift */; };
 		6A7AB0132079DAFB002EFC80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7AB0122079DAFB002EFC80 /* ViewController.swift */; };
 		6A7AB0162079DAFB002EFC80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7AB0142079DAFB002EFC80 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A19FA4A207B6CFD00DD76A0 /* belowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = belowCollectionViewCell.swift; sourceTree = "<group>"; };
 		6A7AB00D2079DAFB002EFC80 /* meditation-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meditation-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7AB0102079DAFB002EFC80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A7AB0122079DAFB002EFC80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				6A7AB0102079DAFB002EFC80 /* AppDelegate.swift */,
 				6A7AB0122079DAFB002EFC80 /* ViewController.swift */,
 				6A7AB0142079DAFB002EFC80 /* Main.storyboard */,
+				6A19FA4A207B6CFD00DD76A0 /* belowCollectionViewCell.swift */,
 				6A7AB0172079DAFC002EFC80 /* Assets.xcassets */,
 				6A7AB0192079DAFC002EFC80 /* LaunchScreen.storyboard */,
 				6A7AB01C2079DAFC002EFC80 /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A19FA4B207B6CFD00DD76A0 /* belowCollectionViewCell.swift in Sources */,
 				6A7AB0132079DAFB002EFC80 /* ViewController.swift in Sources */,
 				6A7AB0112079DAFB002EFC80 /* AppDelegate.swift in Sources */,
 			);
