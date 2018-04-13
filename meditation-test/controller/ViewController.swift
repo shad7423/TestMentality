@@ -32,6 +32,7 @@ class ViewController: UIViewController ,UICollectionViewDelegate,UICollectionVie
         
         picker.mainColor = UIColor.white
         picker.closeButtonColor = UIColor.white
+        picker.buttonFont = UIFont.systemFont(ofSize: 15, weight: .bold)
         
         
        
@@ -63,15 +64,16 @@ class ViewController: UIViewController ,UICollectionViewDelegate,UICollectionVie
     
     @IBAction func categoriesButton(_ sender: Any) {
        
-        //picker.title = "Today, learn About"
+        picker.title = "  Today, learn About"
+       
         //picker.title.append("choose from below topics")
         
        
         
         
+    
         
-        
-        picker.titleFont = UIFont.systemFont(ofSize:25, weight: .bold)
+        picker.titleFont = UIFont.systemFont(ofSize:20, weight: .bold)
         let categories = [
             "Quit Smoking",
             "Determination",
@@ -88,7 +90,7 @@ class ViewController: UIViewController ,UICollectionViewDelegate,UICollectionVie
         let values = categories.map { TCPickerView.Value(title: $0) }
         picker.values = values
         picker.delegate = self
-        picker.itemsFont = UIFont.systemFont(ofSize: 18, weight: .light)
+        picker.itemsFont = UIFont.systemFont(ofSize: 15, weight: .regular)
         picker.selection = .single
         picker.completion = { (selectedIndexes) in
             for i in selectedIndexes {
@@ -100,9 +102,9 @@ class ViewController: UIViewController ,UICollectionViewDelegate,UICollectionVie
     
     @IBAction func moodButton(_ sender: UIButton) {
         
-        picker.title = " My Current Mood"
+        picker.title = "  My Current Mood"
         // picker.closeButtonColor = UIColor(cgColor: "FDB164" as! CGColor)
-        picker.titleFont = UIFont.systemFont(ofSize:20, weight: .light)
+        picker.titleFont = UIFont.systemFont(ofSize:20, weight: .bold)
         let mood = [
             "Relax",
             "Embarrassed",
@@ -118,7 +120,7 @@ class ViewController: UIViewController ,UICollectionViewDelegate,UICollectionVie
         let values = mood.map { TCPickerView.Value(title: $0) }
         picker.values = values
         picker.delegate = self
-        picker.itemsFont = UIFont.systemFont(ofSize: 18, weight: .light)
+        picker.itemsFont = UIFont.systemFont(ofSize: 15, weight: .regular)
         picker.selection = .single
         picker.completion = { (selectedIndexes) in
             for i in selectedIndexes {
@@ -134,8 +136,15 @@ class ViewController: UIViewController ,UICollectionViewDelegate,UICollectionVie
     
     @IBAction func startSessionButton(_ sender: UIButton) {
         
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "audioTableView") as! audioTableView
+        let navigationController = UINavigationController(rootViewController: vc)
+        self.present(navigationController, animated: true, completion: nil)
         
+ 
+    
+    
     }
+    
     
     // ////
 
