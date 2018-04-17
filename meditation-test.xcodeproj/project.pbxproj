@@ -11,6 +11,8 @@
 		6A19FA4B207B6CFD00DD76A0 /* belowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A19FA4A207B6CFD00DD76A0 /* belowCollectionViewCell.swift */; };
 		6A19FA51207DFCA900DD76A0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A19FA50207DFCA900DD76A0 /* Default-568h@2x.png */; };
 		6A19FA53207E215800DD76A0 /* audioTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A19FA52207E215800DD76A0 /* audioTableView.swift */; };
+		6A5BE2A62086096D00158EE2 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5BE2A52086096D00158EE2 /* SplashScreenViewController.swift */; };
+		6A6F87532084B2BA002D0DF4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6F874D2084B2B8002D0DF4 /* AVFoundation.framework */; };
 		6A7AB0112079DAFB002EFC80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7AB0102079DAFB002EFC80 /* AppDelegate.swift */; };
 		6A7AB0132079DAFB002EFC80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7AB0122079DAFB002EFC80 /* ViewController.swift */; };
 		6A7AB0162079DAFB002EFC80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7AB0142079DAFB002EFC80 /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 		6A19FA4A207B6CFD00DD76A0 /* belowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = belowCollectionViewCell.swift; sourceTree = "<group>"; };
 		6A19FA50207DFCA900DD76A0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6A19FA52207E215800DD76A0 /* audioTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioTableView.swift; sourceTree = "<group>"; };
+		6A5BE2A52086096D00158EE2 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		6A6F874D2084B2B8002D0DF4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6A7AB00D2079DAFB002EFC80 /* meditation-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meditation-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7AB0102079DAFB002EFC80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A7AB0122079DAFB002EFC80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +44,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				386E1D7943001375E6D1278B /* Pods_meditation_test.framework in Frameworks */,
+				6A6F87532084B2BA002D0DF4 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				6A7AB0102079DAFB002EFC80 /* AppDelegate.swift */,
+				6A5BE2A52086096D00158EE2 /* SplashScreenViewController.swift */,
 				6A19FA4E207DFADD00DD76A0 /* controller */,
 				6A19FA4D207DFAB700DD76A0 /* Modal */,
 				6A19FA4C207DFA9700DD76A0 /* view */,
@@ -125,6 +131,7 @@
 		821C532614675C329B1A24A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A6F874D2084B2B8002D0DF4 /* AVFoundation.framework */,
 				84C990293BD6689CF4E90BFD /* Pods_meditation_test.framework */,
 			);
 			name = Frameworks;
@@ -243,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A5BE2A62086096D00158EE2 /* SplashScreenViewController.swift in Sources */,
 				6A19FA53207E215800DD76A0 /* audioTableView.swift in Sources */,
 				6A19FA4B207B6CFD00DD76A0 /* belowCollectionViewCell.swift in Sources */,
 				6A7AB0132079DAFB002EFC80 /* ViewController.swift in Sources */,
@@ -391,8 +399,13 @@
 			baseConfigurationReference = 081B98289E2E885E27BE9667 /* Pods-meditation-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A8QUY433B6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -410,8 +423,13 @@
 			baseConfigurationReference = 6342F66E2A0226F71C7B31B2 /* Pods-meditation-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A8QUY433B6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -18,6 +18,17 @@ import TCPickerView
 
 class ViewController: UIViewController ,UICollectionViewDelegate,UICollectionViewDataSource,TCPickerViewDelegate{
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+
+//    
+//    override func viewDidDisappear(_ animated: Bool) {
+//        super.viewDidDisappear(animated)
+//        navigationController?.setNavigationBarHidden(false, animated: true)
+//    }
+    
 
 
   //  var arrayCustomCell = [cellData]()
