@@ -20,6 +20,20 @@ class audioTableView: UIViewController,AVAudioPlayerDelegate, UITableViewDelegat
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
+    //-
+    @IBAction func goToPlayButton(_ sender: UIButton) {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "audioPlayController") as! audioPlayController
+        let navigationController = UINavigationController(rootViewController: vc)
+        self.present(navigationController, animated: true, completion: nil)
+    }
+    @IBAction func backToHomeButton(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        let navigationController = UINavigationController(rootViewController: vc)
+        self.present(navigationController, animated: true, completion: nil)
+    }
+    
+ //- //////////////////////////////////
     var audioPlayer : AVAudioPlayer = AVAudioPlayer()
    
     var cellArray = ["FOUNDATION" , "HEALTH", "BRAVE" , "HAPPINESS" ,"WORK & PERFORMANCE", "STUDENT","SPORT"]
