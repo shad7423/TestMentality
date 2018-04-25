@@ -11,6 +11,8 @@ import  UIKit
 
 class audioPlayController:UIViewController {
     
+    var aduioTempBool : Bool?
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: false)
@@ -26,6 +28,8 @@ class audioPlayController:UIViewController {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "audioTableView") as! audioTableView
         let navigationController = UINavigationController(rootViewController: vc)
         self.present(navigationController, animated: true, completion: nil)
+        vc.audioBool = aduioTempBool 
+        
     }
     
 }

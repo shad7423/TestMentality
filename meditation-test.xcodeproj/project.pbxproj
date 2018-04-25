@@ -11,9 +11,12 @@
 		6A19FA4B207B6CFD00DD76A0 /* belowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A19FA4A207B6CFD00DD76A0 /* belowCollectionViewCell.swift */; };
 		6A19FA51207DFCA900DD76A0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A19FA50207DFCA900DD76A0 /* Default-568h@2x.png */; };
 		6A19FA53207E215800DD76A0 /* audioTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A19FA52207E215800DD76A0 /* audioTableView.swift */; };
+		6A1D37B1208DBFDD000152A4 /* myReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D37B0208DBFDD000152A4 /* myReachability.swift */; };
 		6A1EE3DB2088E1CC005DCD69 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1EE3DA2088E1CC005DCD69 /* loginViewController.swift */; };
 		6A5BE2A62086096D00158EE2 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5BE2A52086096D00158EE2 /* SplashScreenViewController.swift */; };
 		6A5E8E6620871F9900201EB3 /* audioPlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E8E6520871F9900201EB3 /* audioPlayController.swift */; };
+		6A664E802089F8A80008604F /* audioViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A664E7F2089F8A80008604F /* audioViewCell.swift */; };
+		6A664E82208A18100008604F /* paypalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A664E81208A18100008604F /* paypalController.swift */; };
 		6A6F87532084B2BA002D0DF4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6F874D2084B2B8002D0DF4 /* AVFoundation.framework */; };
 		6A7AB0112079DAFB002EFC80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7AB0102079DAFB002EFC80 /* AppDelegate.swift */; };
 		6A7AB0132079DAFB002EFC80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7AB0122079DAFB002EFC80 /* ViewController.swift */; };
@@ -28,9 +31,12 @@
 		6A19FA4A207B6CFD00DD76A0 /* belowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = belowCollectionViewCell.swift; sourceTree = "<group>"; };
 		6A19FA50207DFCA900DD76A0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6A19FA52207E215800DD76A0 /* audioTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioTableView.swift; sourceTree = "<group>"; };
+		6A1D37B0208DBFDD000152A4 /* myReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myReachability.swift; sourceTree = "<group>"; };
 		6A1EE3DA2088E1CC005DCD69 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		6A5BE2A52086096D00158EE2 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		6A5E8E6520871F9900201EB3 /* audioPlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioPlayController.swift; sourceTree = "<group>"; };
+		6A664E7F2089F8A80008604F /* audioViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioViewCell.swift; sourceTree = "<group>"; };
+		6A664E81208A18100008604F /* paypalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paypalController.swift; sourceTree = "<group>"; };
 		6A6F874D2084B2B8002D0DF4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6A7AB00D2079DAFB002EFC80 /* meditation-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meditation-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7AB0102079DAFB002EFC80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +94,8 @@
 				6A19FA52207E215800DD76A0 /* audioTableView.swift */,
 				6A5E8E6520871F9900201EB3 /* audioPlayController.swift */,
 				6A1EE3DA2088E1CC005DCD69 /* loginViewController.swift */,
+				6A664E7F2089F8A80008604F /* audioViewCell.swift */,
+				6A664E81208A18100008604F /* paypalController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -99,6 +107,14 @@
 			);
 			name = Plist;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		6A1D37AF208DBF62000152A4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6A1D37B0208DBFDD000152A4 /* myReachability.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		6A7AB0042079DAFB002EFC80 = {
@@ -124,6 +140,7 @@
 			children = (
 				6A7AB0102079DAFB002EFC80 /* AppDelegate.swift */,
 				6A5BE2A52086096D00158EE2 /* SplashScreenViewController.swift */,
+				6A1D37AF208DBF62000152A4 /* Resources */,
 				6A19FA4E207DFADD00DD76A0 /* controller */,
 				6A19FA4D207DFAB700DD76A0 /* Modal */,
 				6A19FA4C207DFA9700DD76A0 /* view */,
@@ -259,10 +276,13 @@
 				6A1EE3DB2088E1CC005DCD69 /* loginViewController.swift in Sources */,
 				6A5BE2A62086096D00158EE2 /* SplashScreenViewController.swift in Sources */,
 				6A19FA53207E215800DD76A0 /* audioTableView.swift in Sources */,
+				6A664E802089F8A80008604F /* audioViewCell.swift in Sources */,
 				6A5E8E6620871F9900201EB3 /* audioPlayController.swift in Sources */,
 				6A19FA4B207B6CFD00DD76A0 /* belowCollectionViewCell.swift in Sources */,
 				6A7AB0132079DAFB002EFC80 /* ViewController.swift in Sources */,
 				6A7AB0112079DAFB002EFC80 /* AppDelegate.swift in Sources */,
+				6A1D37B1208DBFDD000152A4 /* myReachability.swift in Sources */,
+				6A664E82208A18100008604F /* paypalController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,7 +33,8 @@ class ViewController: UIViewController ,UICollectionViewDelegate,UICollectionVie
 
   //  var arrayCustomCell = [cellData]()
     
-    var arrayImage = [UIImage(named: "albumArt"),UIImage(named: "albumArt"),UIImage(named: "albumArt"),UIImage(named: "albumArt")]
+    
+    var arrayImage = [UIImage(named: "albumArt"),UIImage(named: "albumArt"),UIImage(named: "albumArt"),UIImage(named: "albumArt"),UIImage(named: "albumArt"),UIImage(named: "albumArt"),UIImage(named: "albumArt"),UIImage(named: "albumArt")]
     var arrayText = ["frst","second","third","fourth"]
     
     let picker = TCPickerView()
@@ -59,7 +60,7 @@ class ViewController: UIViewController ,UICollectionViewDelegate,UICollectionVie
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "customCell", for: indexPath) as! belowCollectionViewCell
                 cell.imageCustom.image = arrayImage[indexPath.row]
-                cell.textCustom.text = arrayText[indexPath.row]
+                //cell.textCustom1.text = arrayText[indexPath.row]
             
             
             return cell
@@ -149,13 +150,23 @@ class ViewController: UIViewController ,UICollectionViewDelegate,UICollectionVie
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "audioTableView") as! audioTableView
         let navigationController = UINavigationController(rootViewController: vc)
+        //vc.view.viewWithTag(1)?.isHidden = true
         self.present(navigationController, animated: true, completion: nil)
+        vc.audioBool = false
         
  
     
     
     }
     
+    @IBAction func goToPaypalControllerButton(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "paypalController") as! paypalController
+        let navigationController = UINavigationController(rootViewController: vc)
+        
+        self.present(navigationController, animated: true, completion: nil)
+        
+        
+    }
     
     // ////
 
