@@ -1,0 +1,16 @@
+PODS:
+  - TCPickerView (0.1.9)
+
+DEPENDENCIES:
+  - TCPickerView (~> 0.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - TCPickerView
+
+SPEC CHECKSUMS:
+  TCPickerView: 4bacd1f81121b3a12ff4624da657e3dfd1738383
+
+PODFILE CHECKSUM: eb477921a7c6076edabd5746a8afd21e2db14930
+
+COCOAPODS: 1.5.0
