@@ -17,7 +17,7 @@ class paypalController: UIViewController {
     }
     
     @IBAction func backToHome(_ sender: UIButton) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "mainViewController") as! mainViewController
         let navigationController = UINavigationController(rootViewController: vc)
         self.present(navigationController, animated: true, completion: nil)
     }

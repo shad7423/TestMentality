@@ -16,7 +16,7 @@ import TCPickerView
 //    
 //}
 
-class ViewController: UIViewController ,UICollectionViewDelegate,UICollectionViewDataSource,TCPickerViewDelegate{
+class mainViewController: UIViewController ,UICollectionViewDelegate,UICollectionViewDataSource,TCPickerViewDelegate{
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

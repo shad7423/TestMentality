@@ -17,8 +17,8 @@ class SplashScreenViewController : UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        //self.createMenuView()
-        self.createLoginView()
+        self.createMenuView()
+       // self.createLoginView()
         //self.navigationController?.navigationBar.isHidden = false
     }
     
@@ -32,7 +32,7 @@ class SplashScreenViewController : UIViewController {
 extension SplashScreenViewController{
     
     func createMenuView() {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "mainViewController") as! mainViewController
         let navigationController = UINavigationController(rootViewController: vc)
         self.present(navigationController, animated: true, completion: nil)
      }

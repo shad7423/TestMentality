@@ -32,7 +32,7 @@ class audioTableView: UIViewController,AVAudioPlayerDelegate, UITableViewDelegat
     }
     @IBAction func backToHomeButton(_ sender: UIButton) {
         if audioBool == true { audioPlayer.stop() }
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "mainViewController") as! mainViewController
         let navigationController = UINavigationController(rootViewController: vc)
         self.present(navigationController, animated: true, completion: nil)
     }
